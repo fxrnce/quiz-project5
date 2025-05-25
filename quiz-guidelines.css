@@ -1,0 +1,133 @@
+body, html {
+  margin: 0; padding: 0;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #264a8b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: white;
+  padding: 40px 60px;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 900;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  color: black;
+  text-transform: uppercase;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: relative;
+}
+
+.left-text {
+  width: 60%;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.left-text p {
+ padding-left: 170px;
+  margin-bottom: 20px;
+}
+
+.left-text ul {
+  list-style: none;
+  padding-left: 170px;
+  margin-bottom: 30px;
+}
+
+.left-text ul li {
+  margin-bottom: 15px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.left-text ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background-image: url('check.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right-side {
+  width: 500px; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bulb-icon {
+  position: absolute;
+  right: 300px; 
+  top: -180px;
+  width: 550px;
+}
+
+.start-btn {
+  position: absolute;
+  bottom: 230px;
+  right: 500px; 
+  background-color: #c8ccee;
+  border: 4px solid #f9b233;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Gagalin', cursive;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 10;
+}
+
+.start-btn:hover {
+  background-color: #f9b233;
+  color: #264a8b;
+}
+
+.back-home-btn {
+  position: absolute; 
+  top: 58px;         
+  left: 830px;        
+  background-color: #f9b233;
+  color: #264a8b;
+  font-family: 'Gagalin', cursive;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1000;      
+}
+
+.back-home-btn:hover {
+  background-color: #e0a81c;
+  color: #1e365f;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WEBWIZ QUIZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gagalin&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="congrats.css" />
+</head>
+<body>
+  <header class="quiz-header">
+    <h1>WEBWIZ QUIZ</h1>
+  </header>
+
+  <main class="congrats-container">
+    <h2>CONGRATS!</h2>
+    <p>This completes your quiz. Please review your answers before submitting.</p>
+    <p>Thank you!</p>
+
+    <img src="celeb.gif" alt="Celebration GIF" class="celebration-gif" />
+
+    <div class="buttons-container">
+      <button class="submit-btn" onclick="confirmSubmit()">SUBMIT</button>
+    </div>
+
+    <button class="back-btn" onclick="history.back()">&#8592;</button>
+  </main>
+
+  <script>
+    function confirmSubmit() {
+      if (confirm("Are you sure you want to submit your answers?")) {
+        window.location.href = 'index.html';  // Redirect to homepage on confirmation
+      }
+    }
+  </script>
+</body>
+</html>

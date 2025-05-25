@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WEBWIZ QUIZ - Enumeration</title>
+  <link rel="stylesheet" href="enu-quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gagalin&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<script>
+  function confirmBack() {
+    const confirmLeave = confirm("Are you sure you want to go back? Your current answers will be lost.");
+    if (confirmLeave) {
+      window.location.href = 'quiz-guidelines.html';
+    }
+  }
+</script>
+
+<body>
+  <header class="quiz-header">
+    <h1>WEBWIZ QUIZ</h1>
+    <button class="back-btn" onclick="confirmBack()">BACK TO GUIDELINES</button>
+  </header>
+
+  <main class="quiz-container enumeration">
+    <h2>IDENTIFICATION</h2>
+    <p class="subtitle">Fill in the blanks by typing your answers.</p>
+    <ol class="enumeration-list">
+      <li>
+        <label class="enum-item">
+          <span class="question-text">List 3 types of CSS List</span>
+          <input type="text" name="q1" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">4 common HTML formatting tags</span>
+          <input type="text" name="q2" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">Enumerate 5 CSS properties used in text formatting</span>
+          <input type="text" name="q3" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">Name 3 ways to apply CSS styles</span>
+          <input type="text" name="q4" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">3 tags used to create a table in HTML</span>
+          <input type="text" name="q5" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">List 5 valid HTML5 semantic tags</span>
+          <input type="text" name="q6" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">Name 3 common units used in CSS for size</span>
+          <input type="text" name="q7" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">List 4 values for the position property in CSS</span>
+          <input type="text" name="q8" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">List 3 pseudo-classes in CSS</span>
+          <input type="text" name="q9" placeholder="Type your answer here" />
+        </label>
+      </li>
+      <li>
+        <label class="enum-item">
+          <span class="question-text">Enumerate 3 differences between HTML and CSS</span>
+          <input type="text" name="q10" placeholder="Type your answer here" />
+        </label>
+      </li>
+    </ol>
+
+    <div class="btn-group">
+      <button class="back-btn" onclick="window.location.href='enu.html'">BACK</button>
+      <button class="next-btn" onclick="window.location.href='congrats.html'">NEXT</button>
+    </div>
+  </main>
+</body>
+</html>

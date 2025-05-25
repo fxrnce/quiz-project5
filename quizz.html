@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webwiz Quiz</title>
+  <link rel="stylesheet" href="quizz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gagalin&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<script>
+  function confirmBack() {
+    const confirmLeave = confirm("Are you sure you want to go back? Your current answers will be lost.");
+    if (confirmLeave) {
+      window.location.href = 'quiz-guidelines.html';
+    }
+  }
+</script>
+
+<body>
+
+  <header class="quiz-header">
+    <h1>WEBWIZ QUIZ</h1>
+ <button class="back-btn" onclick="confirmBack()">BACK TO GUIDELINES</button>
+  </header>
+
+  <div class="progress-bar">
+  <div class="progress" style="width: 50%;"></div> 
+ </div>
+
+  <main class="quiz-container">
+
+    <!-- Question 1 -->
+    <section class="quiz-item">
+      <h2>QUESTION #1</h2>
+      <p>What does HTML stand for?</p>
+      <div class="options">
+        <label><input type="radio" name="q1" /> A. Hyper Trainer Marking Language</label>
+        <label><input type="radio" name="q1" /> B. Hyper Text Markup Language</label>
+        <label><input type="radio" name="q1" /> C. Hyper Text Marketing Language</label>
+        <label><input type="radio" name="q1" /> D. Hyper Transfer Markup Language</label>
+      </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="quiz-item">
+      <h2>QUESTION #2</h2>
+      <p>Which HTML tag is used to define an internal style sheet?</p>
+      <div class="options">
+        <label><input type="radio" name="q2" /> A. &lt;css&gt;</label>
+        <label><input type="radio" name="q2" /> B. &lt;style&gt;</label>
+        <label><input type="radio" name="q2" /> C. &lt;script&gt;</label>
+        <label><input type="radio" name="q2" /> D. &lt;link&gt;</label>
+      </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="quiz-item">
+      <h2>QUESTION #3</h2>
+      <p>What does CSS stand for?</p>
+      <div class="options">
+        <label><input type="radio" name="q3" /> A. Creative Style Sheets</label>
+        <label><input type="radio" name="q3" /> B. Cascading Style Sheets</label>
+        <label><input type="radio" name="q3" /> C. Colorful Style Sheets</label>
+        <label><input type="radio" name="q3" /> D. Computer Style Sheets</label>
+      </div>
+    </section>
+
+    <!-- Question 4 -->
+    <section class="quiz-item">
+      <h2>QUESTION #4</h2>
+      <p>Which property is used to change the text color in CSS?</p>
+      <div class="options">
+        <label><input type="radio" name="q4" /> A. font-color</label>
+        <label><input type="radio" name="q4" /> B. color</label>
+        <label><input type="radio" name="q4" /> C. text-color</label>
+        <label><input type="radio" name="q4" /> D. background-color</label>
+      </div>
+    </section>
+
+    <!-- Question 5 -->
+    <section class="quiz-item">
+      <h2>QUESTION #5</h2>
+      <p>Which HTML element is used to insert a line break?</p>
+      <div class="options">
+        <label><input type="radio" name="q5" /> A. &lt;break&gt;</label>
+        <label><input type="radio" name="q5" /> B. &lt;br&gt;</label>
+        <label><input type="radio" name="q5" /> C. &lt;lb&gt;</label>
+        <label><input type="radio" name="q5" /> D. &lt;line&gt;</label>
+      </div>
+    </section>
+    
+    <div class="submit-container">
+       <button class="next-btn" onclick="location.href='quiz-part2.html'">NEXT</button>
+    </div>
+  </main>
+
+</body>
+</html>

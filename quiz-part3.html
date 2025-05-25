@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Webwiz Quiz Part 3 - Identification</title>
+  <link rel="stylesheet" href="identi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gagalin&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<script>
+  function confirmBack() {
+    const confirmLeave = confirm("Are you sure you want to go back? Your current answers will be lost.");
+    if (confirmLeave) {
+      window.location.href = 'quiz-guidelines.html';
+    }
+  }
+</script>
+
+<body>
+  <header class="quiz-header">
+    <h1>WEBWIZ QUIZ</h1>
+    <button class="back-btn" onclick="confirmBack()">BACK TO GUIDELINES</button>
+  </header>
+
+  <main class="quiz-container">
+    <section class="identification">
+      <h2>IDENTIFICATION</h2>
+      <p>Fill in the blanks by typing your answers.</p>
+      <form class="questions-wrapper">
+        <label data-number="1"><input type="text" placeholder="Type your answer here" /> The opening tag used to create the main heading in HTML.</label>
+        <label data-number="2"><input type="text" placeholder="Type your answer here" /> The attribute used in &lt;img&gt; tag to provide an alternative text.</label>
+        <label data-number="3"><input type="text" placeholder="Type your answer here" /> The HTML tag used to display tabular data.</label>
+        <label data-number="4"><input type="text" placeholder="Type your answer here" /> The property in CSS that changes the font of the text.</label>
+        <label data-number="5"><input type="text" placeholder="Type your answer here" /> The selector used in CSS to apply styles to multiple elements with the same class.</label>
+        <label data-number="6"><input type="text" placeholder="Type your answer here" /> The attribute used in &lt;a&gt; tag to specify the destination URL.</label>
+        <label data-number="7"><input type="text" placeholder="Type your answer here" /> The HTML element used to group block-elements for styling.</label>
+        <label data-number="8"><input type="text" placeholder="Type your answer here" /> The CSS property that controls the size of text.</label>
+        <label data-number="9"><input type="text" placeholder="Type your answer here" /> The tag used to define a paragraph in HTML.</label>
+        <label data-number="10"><input type="text" placeholder="Type your answer here" /> The method to link an external CSS file to an HTML document.</label>
+      </form>
+
+      <div class="btn-container">
+        <button class="back-btn" onclick="window.location.href='identification.html'">BACK</button>
+        <button class="next-btn" onclick="window.location.href='enu.html'">NEXT</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
